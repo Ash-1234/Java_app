@@ -1,6 +1,6 @@
 FROM maven AS build
 WORKDIR /app
-COPY ./app
+COPY . /app
 RUN mvn clean package
 
 FROM tomcat
